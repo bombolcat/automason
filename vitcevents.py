@@ -7,7 +7,7 @@ import time
 from bs4 import BeautifulSoup
 from pprint import pprint
 
-class Scrape:
+class VITCEvents:
 
     def __init__(self):
         total_card_count=0
@@ -71,5 +71,5 @@ class Scrape:
         pass
 
 if __name__=="__main__":
-    scrape=Scrape()
-    asyncio.run(scrape.push_all_cards(write=False))
+    scrape=VITCEvents()
+    asyncio.run(scrape.push_all_cards(write=True))
